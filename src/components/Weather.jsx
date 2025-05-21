@@ -29,8 +29,8 @@ const Weather = () => {
   };
 
   const search = async (city) => {
-    if (city === "") {
-      alert("Enter city name");
+    if (!city|| city.trim()=== "") {
+      console.warn("No city provided")
       return;
     }
 
